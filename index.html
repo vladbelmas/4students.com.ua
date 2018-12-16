@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="1wp9226Hygru8efu2wf48QKKDKYFldWzqVxGQ-YVdwE" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>4students</title>
+</head>
+<body>
+    <section class="form-hero hide">
+        <div class="container">
+            <div class="row">
+                <div class="form-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="col">
+                    <div class="hero-wrap">
+                        <form id="smartForm" id="idform" action="mail.php" method="post" enctype="multipart/form-data">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="tel" required name="phone" id="phone" class="form-control" placeholder="Номер телефона">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="work_type">Вид работы</label>
+                                            <div class="input-group">
+                                                <select class="custom-select" name="work_type" id="work_type">
+                                                    <option>Курсовая</option>
+                                                    <option>Магистерская</option>
+                                                    <option>Бакалаврская</option>
+                                                    <option>Дипломная</option>
+                                                    <option>Диссертация</option>
+                                                    <option>Отчет по практике</option>
+                                                    <option>Реферат</option>
+                                                    <option>Контрольная</option>
+                                                    <option>Презентация</option>
+                                                    <option>Эссе</option>
+                                                    <option>Статья</option>
+                                                    <option>Расчетная</option>
+                                                    <option>Задача</option>
+                                                    <option>Тесты</option>
+                                                    <option>Практическая</option>
+                                                    <option>Экзамен онлайн</option>
+                                                    <option>Другое</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" name="work-subject" id="work-subject" class="form-control" placeholder="Тема работы">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group date-input">
+                                            <input type="date" name="deadline" id="deadline" class="form-control" placeholder="Дата выполнения">
+                                            <div class="wrap-date">Дата</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                                <!-- <label for="custom-file">Прикрепить файл</label> -->
+                                                <input type="file" name="upload" id="custom-file" class="form-control-file" placeholder="Файл">
+                                            </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-outline-danger">УЗНАТЬ СТОИМОСТЬ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero" id="mainId">
+        <div class="menu-button">
+            <img src="img/menu-button.png" alt="">
+            МЕНЮ
+        </div>
+        <div class="container-fluid menu-wrapper hide">
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a class='smooth-scroll' href="#mainId">Главная</a></li>
+                <li><a class='smooth-scroll' href="#aboutId">Немного о нас</a></li>
+                <li><a class='smooth-scroll' href="#typeId">Какие работы мы выполняем</a></li>
+                <li><a class='smooth-scroll' href="#shemaId">Схема сотрудничества</a></li>
+                <li><a class='smooth-scroll' href="#garantyId">Гарантии</a></li>
+                <li><a class='smooth-scroll' href="#testimonialsId">Отзывы</a></li>
+                <li><a class='smooth-scroll' href="#contactId">Контакты</a></li>
+                <li><a href="tel:0975431675"><i class="fas fa-mobile"></i>0975431675</a></li>
+                <li><a href="tel:0959434113"><i class="fas fa-mobile"></i>0959434113</a></li>
+            </ul>
+        </div>
+        <div class="container container-logo text-center">
+            <img class="img-fluid" src="img/logo.png" alt="logo">
+            <div class="form-button">
+                Узнать стоимость
+            </div>
+        </div> 
+    </section>
+    <section class="about" id="aboutId">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title">НЕМНОГО О НАС</h2>
+                    <p><b>У нас есть возможность заказать курсовые работы, рефераты, контрольные, дипломные.</b> Опыт, приобретённый за многие годы на рынке услуг для студентов, дает нам возможность гарантировать высокое качество исполняемых работ.</p>
+                    <p>В интернете сейчас можно найти множество организаций, которые занимаются написанием студенческих работ и консультацией студентов. И тут, и там полно объявлений: «заказать курсовую », «курсовая работа на заказ»,  «курсовая заказать», «написание курсовых», и т.п., и т.д. Такое количество предложений и в них легко запутаться. Как не ошибиться и не быть обманутым? Заказать написание работы и быть уверенным, в ее качестве на все 100%?</p>
+                    <p>Первое, что вам нужно знать, если вы решились заказать курсовую, наши работы отличаются уникальностью. После сдачи наши работы не попадают в глобальную сеть на всеобщее скачивание, а остаются в нашей базе данных под строгим контролем. Это особенно важно, поскольку преподаватели оценивают не только информативность и целостность работы, написанной студентом, но и ее уникальность.</p>
+                    <p>К Вашим услугам специалисты, которые сделают, оформят всё по высшему разряду и в короткие сроки.</p>
+                    <p>Гарантируется бесплатное доработки курсовых и дипломных работ на заказ, в случае необходимости;</p>
+                </div>
+            </div>
+            <div class="row slider">
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people1.jpg" alt="">
+                            <h3>АННА</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Заказала магистерскую работу на этом сайте, ни разу не пожалела! Работу сделали даже раньше срока, не возникло никаких проблем с уникальностью. Очень вам благодарна. Защитилась успешно. </p>
+                            <p>Рекомендую всем эту компанию!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people2.jpg" alt="">
+                            <h3>АНАСТАСИЯ</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Заказанной работой довольная. Материал соответствует плану, грамотное оформление. Порадовало то, что при заказе сразу правильно все поняли и не задавали кучу уточняющих не нужных вопросов. </p>
+                            <p>Отличная работа, спасибо!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people3.png" alt="">
+                            <h3>ИВАН</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Очень боялся заказывать курсовую работу, так как делаю то в первый раз и боялся что бы не обманули. Рад что попал к этим ребятам, так как работу сделали качественно, быстро. На проверке сказали немного подправить работу, но и с этим никаких проблем не возникло, автор внес все правки которые я попросил. </p>
+                            <p>Спасибо вам большое!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people4.jpg" alt="">
+                            <h3>ТАТЬЯНА</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Заказывала курсовую работу на английском языке, была приятно удивлен качеством работы. Не думала, что кто-то сможет нормально сделать работу на английском. Сразу видно, что работают профессионалы с высоким уровнем. </p>
+                            <p>Супер, еще раз благодарю.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people5.jpg" alt="">
+                            <h3>НИКОЛАЙ</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Спасибо Вам большое за помощь! Вы очень выручили, интересовался у многих других сайтах, и очень кусалась цена, но попав к этим ребятам я удивился разнице в цене. Очень рад, что вовремя вас нашел! Очень понравилось работать с вами. Выполнили все вовремя и, что не мало важно, качественно и за адекватную цену!</p>
+                            <p>Всем рекомендую!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people6.png" alt="">
+                            <h3>ИВАННА</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Робота просто супер! Виконали навіть раніше ніж говорили. Якістю роботи задоволена, все як і хотіла. Дуже Вам вдячна, буду рекомендувати Вас знайомим!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="slider-wrap">
+                        <div class="slider-header">
+                            <img src="img/people7.jpg" alt="">
+                            <h3>МАКСИМ</h3>
+                        </div>
+                        <div class="slider-content">
+                            <p>Отличный сайт!! Очень помогли, заказал магистерскую работу по психологии, сделали все хорошо, с высокой уникальностью. </p>
+                            <p>Буду и дальше заказывать здесь!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what-work" id="typeId">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title">Какие работы мы выполняем</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl col-md-6 work-item">
+                    <div class="work-wrap">
+                        <h3>Магистерская работа</h3>
+                        <h4>от 2700 грн</h4>
+                        <div class="work-form">ЗАКАЗАТЬ</div>
+                    </div>
+                </div>
+                <div class="col-xl col-md-6 work-item">
+                    <div class="work-wrap">
+                        <h3>Дипломная работа</h3>
+                        <h4> от 2000 грн</h4>
+                        <div class="work-form">ЗАКАЗАТЬ</div>
+                    </div>
+                </div>
+                <div class="col-xl col-md-6 work-item">
+                    <div class="work-wrap">
+                        <h3>Курсовая работа</h3>
+                        <h4>от 500грн</h4>
+                        <div class="work-form">ЗАКАЗАТЬ</div>
+                    </div>
+                </div>
+                <div class="col-xl col-md-6 work-item">
+                    <div class="work-wrap">
+                        <h3>Отчет по практике</h3>
+                        <h4>от 550 грн</h4>
+                        <div class="work-form">ЗАКАЗАТЬ</div>
+                    </div>
+                </div>
+                <div class="col-xl col-md-6 work-item">
+                    <div class="work-wrap">
+                        <h3>Реферат</h3>
+                        <h4>от 100 грн</h4>
+                        <div class="work-form">ЗАКАЗАТЬ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schema" id="shemaId">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="title">Схема сотрудничества</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://img.icons8.com/ios/150/000000/new-message-filled.png">
+                    <h5>Вы оформляете заявку, чтобы узнать стоимость и сроки</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://img.icons8.com/ios/150/000000/communication.png">
+                    <h5>Затем менеджер оценивает работу и связывается с вами</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://img.icons8.com/ios/150/000000/card-in-use-filled.png">
+                    <h5>Потом вы вносите предоплату 50% и мы приступаем к работе</h5>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://img.icons8.com/ios/150/000000/to-do.png">
+                    <h5>Готово! Осталось внести доплату и получить свой заказ</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="garanty" id="garantyId">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">ГАРАНТИИ</h2>
+                    <h4>Как быть уверенным в том что твой заказ сделают качественно и точно в срок? Мы тебя прекрасно понимаем.</h4>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.icons8.com/color/200/000000/conference-background-selected.png">
+                    <h4>Опыт</h4>
+                    <p>Если и доверять написание своей работы кому-то, то только опытной команде. Наши авторы написали более 1000 различных работ на все возомжные темы.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.icons8.com/color/200/000000/multi-edit.png">
+                    <h4>Бесплатные правки</h4>
+                    <p>Зачем заказывать работу, если Вы потом исправляете всю работу? Незачем. Мы пишем работу от и до. За правки, которые необходимо будет сделать в работе платить не придется.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.icons8.com/color/200/000000/cash-in-hand.png">
+                    <h4>Возврат денег</h4>
+                    <p>Мы настолько уверенны в нашем качестве, что обещаем вернуть вам все 100% оплаты, если что-нибудь пойдет не так, как мы обещали.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonialsId">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><h2 class="title">Отзывы</h2></div>
+                <div class="col">
+                        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://4students-com-ua.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contactId">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/logo.png" alt="logo">
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="tel:0975431675">0975431675</a></li>
+                        <li><a href="tel:0959434113">0959434113</a></li>
+                        <li><a href="mailto:4studentsgroup@gmail.com">4studentsgroup@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
