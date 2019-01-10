@@ -30,19 +30,6 @@ $(function () {
         $('body,html').animate({scrollTop: top}, 1000);
 	});
 	
-	var offset = 100,	
-		offset_opacity = 300,	
-		scroll_top_duration = 900,	
-		$back_to_top = $('#main-logo');
-		$back_to_top1 = $('#zakaz-form');
-        $(window).scroll(function(){
-            if ($(this).scrollTop()>0){
-                $back_to_top.addClass("min-logo");
-            }
-            else{
-                $back_to_top.removeClass("min-logo");
-            }
-		});
 
 
 
