@@ -27,7 +27,7 @@ $(function () {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top - 50;
-        $('body,html').animate({scrollTop: top}, 1000);
+        $('body,html').animate({scrollTop: top}, 80000);
 	});
 	
 
@@ -37,7 +37,7 @@ $(function () {
 
 
         $('.slider').slick({
-            dots: true,
+            dots: false,
             arrows: true,
             infinite: true,
             autoplay: true,
