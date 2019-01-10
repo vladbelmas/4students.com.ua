@@ -28,6 +28,7 @@ body {
   background: white;
   top: -10px;
   left: 20px;
+  bottom: 25px;
 }
 
 .hero {
@@ -47,13 +48,13 @@ body {
   text-align: center;
   color: white;
   font-weight: 700;
-  cursor: pointer;
 }
 .hero .menu-button img {
   max-height: 60px;
 }
 .hero .container-logo {
   padding-top: 30vh;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +65,7 @@ body {
   color: white;
   font-size: 30px;
   border-radius: 7px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 8px 18px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -78,7 +79,7 @@ body {
 }
 .hero .menu-wrapper {
   background: rgba(0, 0, 0, 0.9);
-  position: fixed;
+  position: absolute;
   z-index: 10;
   height: 100vh;
   width: 100%;
