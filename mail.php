@@ -26,18 +26,5 @@ $mail->addAddress('4studentsgroup@gmail.com');     // Кому будет ухо
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-$mail->addAttachment($_FILES['upload']['tmp_name'], $_FILES['upload']['name']);    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-$mail->Subject = 'Новая заявка с сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Тип работы: ' .$work_type. '<br>Тема работы: ' .$work_theme.
-    '<br>Дата выполнения: ' .$date. 
-    
-$mail->AltBody = '';
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    echo 'Успешная отправка!';
-    header('location: index.html');
-    
-}
+
 ?>
